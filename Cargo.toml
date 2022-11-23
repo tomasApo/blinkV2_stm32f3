@@ -2,7 +2,7 @@
 authors = ["Tomás Apolónia <75183079+tomasApo@users.noreply.github.com>"]
 edition = "2018"
 readme = "README.md"
-name = "hello_world"
+name = "blinkv2"
 version = "0.1.0"
 
 [dependencies]
@@ -11,7 +11,7 @@ cortex-m-rt = "0.7"
 cortex-m-semihosting = "0.3.3"
 
 rtt-target = {version = "0.3.1", features=["cortex-m"]}
-panic-rtt-target = {version = "0.1.2", features=["cortex-m"]}
+#panic-rtt-target = {version = "0.1.2", features=["cortex-m"]}
 panic-semihosting = "0.5.6"
 stm32f3xx-hal = { version = "0.9.1", features = ["ld","rtc","defmt", "rt", "stm32f303xc"] }
 
@@ -31,7 +31,7 @@ stm32f3xx-hal = { version = "0.9.1", features = ["ld","rtc","defmt", "rt", "stm3
 
 # this lets you use `cargo fix`!
 [[bin]]
-name = "hello_world"
+name = "blinkv2"
 test = false
 bench = false
 
